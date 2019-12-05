@@ -1,4 +1,7 @@
 {
+	"name": "egg-eosjs",
+  "version": "1.0.0",
+  "description": "egg eos插件",
   "eggPlugin": {
     "name": "eggEos"
   },

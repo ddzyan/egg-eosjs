@@ -9,6 +9,12 @@ egg eosjs 插件，功能包括：
 7. 广播交易
 
 ## 使用
+### 下载
+```shell
+yarn add egg-eosjs-ddz
+```
+
+
 ### 插件启用
 ```js
 // plugin.js
@@ -38,3 +44,5 @@ exports.eggEosjs = {
 服务注册成功，会将所有方法将挂载在 service.chain 上，具体操作请参考 test 单元测试代码
 
 ## 更新记录
+### [2019-12-20]
+1. 更新使用说明

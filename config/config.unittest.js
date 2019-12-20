@@ -12,7 +12,7 @@ module.exports = () => {
       systemActive: 'transfer',
       systemPermission: 'active',
       systemSymbol: 'EOS',
-      privateKeys: [ '5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3' ],
+      privateKeys: ['5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3'],
     },
   };
 

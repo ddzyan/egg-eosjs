@@ -46,3 +46,6 @@ exports.eggEosjs = {
 ## 更新记录
 ### [2019-12-20]
 1. 更新使用说明
+
+### [2019-1-07]
+1. 构建交易添加参数 customExpireSeconds ，可以自定义过期时间，如果没有传入则采用this.config中配置

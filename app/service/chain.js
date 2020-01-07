@@ -119,7 +119,7 @@ class ChainService extends Service {
     }
   }
 
-  async buildTransaction({ fromAddress, toAddress, memo, quantity }) {
+  async buildTransaction({ fromAddress, toAddress, memo, quantity, customExpireSeconds }) {
     try {
       const { broadcast, sign, expireSeconds, blocksBehind,
         systemContract, systemActive, systemPermission, systemSymbol } = this.nodeConfig;
@@ -144,7 +144,7 @@ class ChainService extends Service {
         broadcast,
         sign,
         blocksBehind,
-        expireSeconds,
+        expireSeconds: customExpireSeconds ? customExpireSeconds : expireSeconds,
       });
       assert(transaction.serializedTransaction, '交易构建失败,serializedTransaction 属性不存在');
       assert(transaction.signatures, '交易构建失败,signatures 属性不存在');
